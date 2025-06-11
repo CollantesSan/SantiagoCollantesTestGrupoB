@@ -1,27 +1,25 @@
-<div class="input-container">
 <label>
-    {{ label }} <span *ngIf="required" class="required">*</span>
+  {{ label }}
+  <span *ngIf="required" class="required">*</span>
 </label>
 
 <ng-container [ngSwitch]="type">
-    <input
-      *ngSwitchCase="'text'"
-    type="text"
+  <input
+    *ngSwitchCase="'text'"
     [placeholder]="placeholder"
     [required]="required"
-    />
+  />
 
-    <textarea
-      *ngSwitchCase="'textarea'"
+  <textarea
+    *ngSwitchCase="'textarea'"
     [placeholder]="placeholder"
-    required]="required"
-    ></textarea>
+    [required]="required"
+  ></textarea>
 
-    <select *ngSwitchCase="'select'" [required]="required">
-    <option value="" disabled selected>Value</option>
-      <option *ngFor="let opt of options" [value]="opt">
-        {{ opt }}
+  <select *ngSwitchCase="'select'" [required]="required">
+    <option *ngFor="let opt of options" [value]="opt">
+      {{ opt }}
     </option>
-    </select>
+  </select>
 </ng-container>
-</div>
+

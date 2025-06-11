@@ -1,0 +1,15 @@
+.card {
+    max-width: 640px;
+    background-color: #f6f9fc;
+    padding: 32px;
+    margin: 48px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-weight: bold;
+    color: #0033a1;
+    font-size: 15px;
+    margin: 20px 0 8px 0;
+}

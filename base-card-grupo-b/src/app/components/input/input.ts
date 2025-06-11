@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common'; // ✅ Necesario para *ngIf, *ngFor, etc.
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-input',
   standalone: true,
-  imports: [CommonModule], // ✅ Importamos las directivas comunes
+  imports: [CommonModule],
   templateUrl: './input.html',
   styleUrl: './input.css'
 })
@@ -15,3 +15,4 @@ export class InputComponent {
   @Input() type: 'text' | 'textarea' | 'select' = 'text';
   @Input() options: string[] = [];
 }
+

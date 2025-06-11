@@ -1,25 +1,36 @@
-.input-container {
-display: flex;
-flex-direction: column;
-margin-bottom: 16px;
-}
-
 label {
-font-size: 14px;
-color: #0a2e6e;
-font-weight: 500;
-margin-bottom: 4px;
+    display: block;
+    font-size: 14px;
+    color: #0033a1;
+    margin: 16px 0 6px;
+    font-weight: 600;
 }
 
 .required {
-color: red;
+    color: red;
+    margin-left: 4px;
 }
 
 input,
 textarea,
 select {
-padding: 8px;
-order: 1px solid #ccc;
-border-radius: 6px;
-font-size: 14px;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #2c2c2c;
+    box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 56px;
+    resize: vertical;
 }
