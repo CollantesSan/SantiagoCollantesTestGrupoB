@@ -1,0 +1,14 @@
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #0a2e6e;
+    margin: 16px 0;
+}
+
+input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    accent-color: #0a2e6e;
+}
