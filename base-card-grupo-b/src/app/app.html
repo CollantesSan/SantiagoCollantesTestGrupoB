@@ -1,1 +1,21 @@
 <app-header></app-header>
+
+<app-input
+  label="Label"
+  placeholder="Value"
+  [required]="true"
+  type="text"
+></app-input>
+
+<app-input
+  label="Label"
+  placeholder="Inserte comentarios u observaciones"
+  type="textarea"
+></app-input>
+
+<app-input
+  label="Label"
+  [required]="true"
+  type="select"
+  [options]="['Opción 1', 'Opción 2', 'Opción 3']"
+></app-input>
